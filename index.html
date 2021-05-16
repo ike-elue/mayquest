@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    
+      <title>MayQuest</title>
+      <meta name="description" content="MayQuest">
+    
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body onload="init()">
+        <div class="video-container">
+            <video id="video-player" poster="title_screen.jpg">
+                <source src="" type="video/mp4">
+             </video>
+        </div>
+        <div class="overlay">
+            <form id="episode">
+                <p></p>
+                <fieldset></fieldset>
+                <button id="reset-button" type="button" class="reset" onclick="startEpisode()">Reset</button>
+                <div class="dropdown" id="event-selector-holder">
+                    <button class="dropbtn">Select Event</button>
+                    <div class="dropdown-content" id="event-selector">
+                    </div>
+                  </div>
+                <a id="continue-button" class="continue" href="javascript:void(0);">Continue</a>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

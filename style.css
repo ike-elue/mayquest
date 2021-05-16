@@ -1,0 +1,132 @@
+video {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+body {
+  background-color:#fbf673;
+}
+
+.video-container {
+  position: relative;
+}
+.overlay {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  min-width:100%;
+}
+
+.overlay h2 {
+  color: black;
+  font-family: 'Nobile', sans-serif;
+  font-size: 9vw;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  height: 400px;
+  padding: 2em;
+  margin: 0 auto;
+}
+form p {
+  margin-bottom: 18px;
+  font-size: 1.175em;
+  line-height: 32px;
+  color:white;
+}
+form fieldset {
+  margin-bottom: 28px;
+  padding: 0;
+  border: none;
+  color:white
+}
+form a.continue {
+  font-size: 1.175em;
+  background-color: #F5ECEE;
+  color: #456142;
+  padding: .5em 1em;
+  text-decoration: none;
+
+}
+
+form a.continue:hover,
+form a.continue:focus {
+  background-color: #DA966A;
+  color:#463822;
+}
+form a.continue {
+ float:right;
+}
+button.reset{
+    background-color: transparent;
+    border:none;
+    color: #F5ECEE;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+button.reset:hover{color:#DA966A;}
+form label span {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 14px 12px;
+  border: 2px solid #DA966A;
+  cursor: pointer;
+  border-radius: 25px;
+ 
+}
+form label:hover span, form label:focus span {
+  border: 2px solid  #DA966A;
+  background-color:#F5ECEE;
+  color: #463822;
+}
+form input[type=radio] {
+  visibility: hidden;
+}
+form input[type=radio]:checked + span {
+   border: 2px solid  #DA966A;
+  background-color:#F5ECEE;
+  color: #463822;
+}
+
+.dropbtn {
+  color: #456142;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  min-height:190px; 
+    overflow-y :auto; 
+    overflow-x:hidden; 
+    position:absolute;
+    width:300px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
